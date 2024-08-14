@@ -1,0 +1,81 @@
+----------------------------------------
+
+vendas-2eca5
+
+ID Firebase
+
+----------------------------------------
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAe_c1eVNVCXRA1-p4fCCl1xy1hljIDi4o",
+  authDomain: "trabalho02-30b4b.firebaseapp.com",
+  databaseURL: "https://trabalho02-30b4b-default-rtdb.firebaseio.com",
+  projectId: "trabalho02-30b4b",
+  storageBucket: "trabalho02-30b4b.appspot.com",
+  messagingSenderId: "280855434196",
+  appId: "1:280855434196:web:14d5e0981dd2e417cbfc41",
+  measurementId: "G-9MB1QCE9D6"
+};
+
+----------------------------------------
+
+PALHETA DE CORES PADRÃO OLX
+
+.color1 { #aaff00 };
+.color2 { #ffaa00 };
+.color3 { #ff00aa };
+.color4 { #aa00ff };
+.color5 { #00aaff };
+
+
+----------------------------------------
+
+
+Cabeçalho
+<View style={styles.container}>
+      <View style={styles.header}>
+        <Image source={require('./logo.png')} style={styles.logo} />
+        <TouchableOpacity onPress={handleLogin}>
+          <Text style={styles.loginButton}>Login</Text>
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.title}>O MELHOR SITE DE DESAPEGA DO BRASIL!</Text>
+</View>
+
+
+Estilo:
+ container: {
+    flex: 1,
+    padding: 16,
+    backgroundColor: 'white',
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingBottom: 16,
+  },
+  logo: {
+    width: 100,
+    height: 50,
+    resizeMode: 'contain',
+  },
+  loginButton: {
+    padding: 10,
+    borderWidth: 1,
+    borderColor: '#cccccc', // Borda cinza de 1 pixel
+    borderRadius: 5,
+    backgroundColor: '#ffffff',
+  },
+    title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'black', // Usando a color2
+    textAlign: 'center',
+    marginBottom: 16,
+  }
+
+
+  ----------------------------------------
+
